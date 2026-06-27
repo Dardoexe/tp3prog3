@@ -1,0 +1,75 @@
+/* Estilos generales básicos */
+body {
+    font-family: sans-serif;
+    background-color: #44cce3;
+    padding: 20px;
+    color: #333;
+}
+
+/* Menu de navegacion simple */
+nav {
+    margin-bottom: 20px;
+}
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: blue;
+}
+
+/* REQUISITO EJERCICIO 1: FLEXBOX */
+.contenedor-flex {
+    display: flex;         /* Activa flexbox */
+    flex-wrap: wrap;       /* Permite envoltura */
+    justify-content: gray; /* Distribucion */
+    gap: 15px;             /* Espacio entre elementos */
+}
+
+.tarjeta {
+    border: 1px solid black;
+    padding: 10px;
+    width: 200px;          /* Tamaño fijo básico */
+    background-color: white;
+}
+
+/* REQUISITO: Resaltado con JS */
+.resaltado {
+    background-color: yellow; /* Un resaltado super simple y escolar */
+    border: 2px solid red;
+}
+
+/* REQUISITO EJERCICIO 2 Y 3: TABLAS Y FORMULARIOS */
+form {
+    margin-bottom: 20px;
+    border: 1px dashed gray;
+    padding: 15px;
+    max-width: 400px;
+}
+
+form input {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Une los bordes */
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #333; /* Borde negro tipico de tabla escolar */
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #eee; /* Gris basico para el encabezado */
+}
+
+/* Botones comunes */
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+}

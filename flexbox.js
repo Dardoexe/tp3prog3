@@ -1,26 +1,39 @@
+
 const productos = [
-    {id: 1, nombre: "Lapicera", precio: 100},
-    {id: 2, nombre: "Cuaderno", precio: 200},
-    {id: 3, nombre: "Borrador", precio: 50},    
-    {id: 4, nombre: "Regla", precio: 150},
-    {id: 5, nombre: "Mochila", precio: 500},
-    {id: 6, nombre: "Carpeta", precio: 300},
+    { id: 1, nombre: "Laptop", precio: 800, destacado: true },
+    { id: 2, nombre: "Mouse", precio: 20, destacado: false },
+    { id: 3, nombre: "Teclado", precio: 50, destacado: false },
+    { id: 4, nombre: "Monitor", precio: 200, destacado: true },
+    { id: 5, nombre: "Auriculares", precio: 60, destacado: false },
+    { id: 6, nombre: "Webcam", precio: 45, destacado: false }
 ];
 
-const contenedor = document.getElementById("contenedorr-tarjetas");
-function mostrarProductos(lista) {
-    contenedor.innerHTML = "";
+const contenedor = document.getElementById("contenedor-tarjetas");
+const boton = document.getElementById("btn-filtrar");
+
+
+function mostrarTarjetas(lista) {
+    contenedor.innerHTML = ""; 
+    
     lista.forEach(prod => {
         const div = document.createElement("div");
         div.classList.add("tarjeta");
-        if(prod.precio > 200) div.classList.add("resaltado");
-        div.innerHTML = `<h3>${prod.nombre}</h3>
-                        <p>Precio: $${prod.precio}</p>`;
+        
+        if (prod.destacado) {
+            div.classList.add("resaltado");
+        }
+        
+        div.innerHTML = `
+            <h3>${prod.nombre}</h3>
+            <p>Precio: $${prod.precio}</p>
+        `;
         contenedor.appendChild(div);
     });
 }
-document.getElementById("btn-filtrar").addEventListener("click", () => {
-    const filtrado = productos.filter(prod => prod.precio > 200);
-    mostrarProductos(filtrado);
+
+boton.addEventListener("click", () => {
+    const filtrados = productos.filter(p => p.destacado === true);
+    mostrarTarjetas(filtrados);
 });
-mostrarProductos(productos);
+
+mostrarTarjetas(productos);
