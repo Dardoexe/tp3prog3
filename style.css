@@ -40,9 +40,10 @@ nav a {
 
 form {
     margin-bottom: 20px;
-    border: 1px dashed rgb(44, 15, 159);
+    border: 10px dashed rgb(44, 15, 159);
     padding: 15px;
-    max-width: 400px;
+    max-width: 500px;
+    
 }
 
 form input {
@@ -72,4 +73,14 @@ th {
 button {
     padding: 5px 10px;
     cursor: pointer;
+    background-color: rgb(160, 216, 246);
 }
+input, table, .tarjeta, button, form {
+    border-radius: 8px;
+}
+.tarjeta, form {
+    border: 1px solid #e5e7eb; /* Un gris casi invisible */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); /* Sombra muy suave */
+    background-color: rgb(8, 92, 171);
+}
+    
