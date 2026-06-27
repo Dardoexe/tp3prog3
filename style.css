@@ -1,46 +1,46 @@
-/* Estilos generales básicos */
+
 body {
     font-family: sans-serif;
-    background-color: #44cce3;
+    background-color: #44e3d3;
     padding: 20px;
-    color: #333;
+    color: #000000;
 }
 
-/* Menu de navegacion simple */
+
 nav {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    background-color: #5985fe;
 }
 nav a {
     margin-right: 15px;
-    text-decoration: none;
-    color: blue;
+    color: rgb(15, 15, 120);
 }
 
-/* REQUISITO EJERCICIO 1: FLEXBOX */
+
 .contenedor-flex {
-    display: flex;         /* Activa flexbox */
-    flex-wrap: wrap;       /* Permite envoltura */
-    justify-content: gray; /* Distribucion */
-    gap: 15px;             /* Espacio entre elementos */
+    display: flex;         
+    flex-wrap: wrap;    
+    justify-content: rgb(157, 35, 35);
+    gap: 15px;             
 }
 
 .tarjeta {
     border: 1px solid black;
     padding: 10px;
-    width: 200px;          /* Tamaño fijo básico */
+    width: 200px;          
     background-color: white;
 }
 
-/* REQUISITO: Resaltado con JS */
+
 .resaltado {
-    background-color: yellow; /* Un resaltado super simple y escolar */
-    border: 2px solid red;
+    background-color: rgb(0, 255, 42); 
+    border: 2px solid rgb(18, 154, 3);
 }
 
-/* REQUISITO EJERCICIO 2 Y 3: TABLAS Y FORMULARIOS */
+
 form {
     margin-bottom: 20px;
-    border: 1px dashed gray;
+    border: 1px dashed rgb(44, 15, 159);
     padding: 15px;
     max-width: 400px;
 }
@@ -54,21 +54,21 @@ form input {
 
 table {
     width: 100%;
-    border-collapse: collapse; /* Une los bordes */
+    border-collapse: collapse; 
     margin-top: 15px;
 }
 
 th, td {
-    border: 1px solid #333; /* Borde negro tipico de tabla escolar */
+    border: 1px solid #000000; 
     padding: 8px;
     text-align: left;
 }
 
 th {
-    background-color: #eee; /* Gris basico para el encabezado */
+    background-color: rgb(74, 147, 186);
 }
 
-/* Botones comunes */
+
 button {
     padding: 5px 10px;
     cursor: pointer;
