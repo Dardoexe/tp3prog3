@@ -56,9 +56,11 @@ form input {
 table {
     width: 100%;
     border-collapse: collapse; 
-    margin-top: 15px;
+    margin-top: 20px;
+    background-color: rgb(161, 205, 252);
+    border: 1px solid #e5e7eb;  
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); 
 }
-
 th, td {
     border: 1px solid #000000; 
     padding: 8px;
@@ -66,21 +68,26 @@ th, td {
 }
 
 th {
-    background-color: rgb(74, 147, 186);
+    background-color: rgb(102, 190, 237);
 }
 
 
 button {
-    padding: 5px 10px;
-    cursor: pointer;
-    background-color: rgb(160, 216, 246);
+    background-color: #2563eb; 
+    color: white;
+    border: none;          
+    padding: 8px 16px;
+    font-weight: 500;
+    transition: background 0.2s ease; 
 }
 input, table, .tarjeta, button, form {
-    border-radius: 8px;
+    border-radius: 10px;
 }
-.tarjeta, form {
-    border: 1px solid #e5e7eb; /* Un gris casi invisible */
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); /* Sombra muy suave */
+.form {
+    border: 1px solid #e5e7eb; 
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); 
     background-color: rgb(8, 92, 171);
 }
-    
+button:hover {
+    background-color: #1d4ed8; 
+}   
